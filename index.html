@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - jesima  portfolio Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: JC BIO
+  * Template URL: https://bootstrapmade.com/JCBIO-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">JC BIO</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="data:image/png;base64,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 alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Jesima Habbebu</h2>
+        <p><span class="typed" data-typed-items=" Developer, Freelancer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="data:image/png;base64,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" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Jesima Habbebu</span></p>
+                <p><strong>Profile: </strong> <span>full stack developer</span></p>
+                <p><strong>Email: </strong> <span>jafferjesi716@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>9876543210</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                Hello, my name is JESIMA HABBEBU, and I'm a freelance  web developer, software engineer, mobile app developer.
+                 specialize in  JavaScript, Python, React.and have worked on a variety of projects, ranging from  websites, apps, custom software to API integrations, database management With 5 years of experience in the industry,
+                  I’m passionate about delivering high-quality solutions that meet clients’ needs. I’m always looking for new and exciting freelance opportunities to further grow my skills and contribute to innovative projects
+                
+              
+              </p>
+              <p>
+                I have worked with startups, small businesses, and established enterprises to deliver customized solutions that drive growth and improve user experience. 
+                Whether it's creating an intuitive UI/UX, optimizing performance, or scaling a platform,
+                 I enjoy tackling challenges and turning ideas into functional digital 
+                
+                
+              
+        
+              
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>JESIMA HABBEBU</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Viyabarigal st,,koranadu,, FL</li>
+                <li>9876543210</li>
+                <li>jafferjesi716@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of computer science &amp; engineering</h4>
+              <h5>2016 - 2020</h5>
+              <p><em>ANNAI COLLEGE OF ENGINEERING AND TECHNOLOGY</em></p>
+            
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              
+              
+              
+              
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Senior graphic design specialist</h4>
+              <h5>2021 - Present</h5>
+              <p><em>koranadu,mayiladuthurai </em></p>
+              <ul>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, Mayiladuthurai</em></p>
+              <ul>
+            
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Graphic designer services include creating visual content like logos, branding, web and app designs, marketing materials, and packaging. These services help businesses communicate visually and enhance their brand presence across digital and print platforms.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="bi bi-activity"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Logo Design&Branding</h3>
+              </a>
+              <p>
+                - Custom logos
+                - Brand identity packages (fonts, colors, logos)
+                - Business cards, letterheads, and stationery</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-broadcast"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Print Design</h3>
+              </a>
+              <p>Brochures, flyers, and posters
+                - Magazines and newsletters
+                - Packaging design
+                - Book and album covers</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-easel"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Web and Digital Design
+                  
+                  
+               </h3>
+              </a>
+              <p>Website layout and UI/UX design
+                - Social media graphics
+                - Digital banners and ads
+                - Infographics</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-bounding-box-circles"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Marketing Materials</h3>
+              </a>
+              <p> Presentation design
+                - Email templates
+                - Promotional material (T-shirts, merchandise).</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Illustration and icon Design</h3>
+              </a>
+              <p>-custom illustration for brands,books or Products 
+                -icon sets for websites ,apps and more
+              </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-chat-square-text"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Motion Graphics and video Design</h3>
+              </a>
+              <p>Animated logo and intros 
+                short explainer videos
+                Video editing for youtube and social media
+              </p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
+              <p>Awards</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 1</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 2</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 2</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 2</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Books 3</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+      
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Portrait Photography</h3>
+              <h4>13,350 INR</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Fashion Photography</h3>
+              <h4>25000 INR</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Sports Photography</h3>
+              <h4>17,000 INR</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Still Life Photography</h3>
+              <h4>11,000 INR</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Wedding Photography</h3>
+              <h4>42,000 INR</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Photojournalism</h3>
+              <h4>17,000 INR</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>What Graphic Designs Do You Offer?</span></h3>
+                <div class="faq-content">
+                  <p> I offer a wide range of graphic design services, including:
+                    - Logo and branding design
+                    - Website and app UI/UX design
+                    - Print design (brochures, flyers, posters)
+                    - Social media graphics and digital marketing materials
+                    - Packaging design
+                    - Custom illustrations and icons
+                    - Motion graphics and video editing.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>What is your Design Process?</span></h3>
+                <div class="faq-content">
+                  <p>Consultation: We’ll discuss your goals, vision, and any design preferences.
+                    Research & Concept Development: I’ll research your industry and competitors to create initial design concepts.
+                    Design & Revisions: I’ll create draft designs and work with you to refine the final product.
+                    Final Delivery: Once approved, I’ll deliver the final files in the required formats (print, web,.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>How much do you charge for your services?</span></h3>
+                <div class="faq-content">
+                  <p>My pricing depends on the scope of the project. For small projects like logo design, I offer flat rates, while larger projects (branding packages or web design) are priced based on the complexity and time required. I provide detailed quotes after discussing the project. Feel free to reach out for a custom estimate</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>How long and does a typical project takes?
+            
+                  
+                  </span></h3>
+                <div class="faq-content">
+                  <p>Logo design: 1-2 weeks
+                    Full branding package: 2-4 weeks
+                    Website design: 4-6 weeks
+                    Print materials: 1-2 weeks Rush services may be available if you have tight deadlines.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>How many revisions are included?</span></h3>
+                <div class="faq-content">
+                  <p>My standard packages typically include 2-3 rounds of revisions. If you require additional changes beyond that, I’m happy to accommodate for an additional fee. My goal is to ensure you’re completely satisfied with the final design!</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>ABDULLAH</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>WELL DEVELOPED</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>RESHMA</h3>
+                <h4>CEO</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>BEST QUALITY</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>JENNIFER</h3>
+                <h4>FREELANCER</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>AMAZING SERVICE</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>JAFAR SATHIK</h3>
+                <h4>Entrepreneur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>GOOD SERVICE.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>B106,NEW STREET,MAYILADUTHURAI</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91 9876543210</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>jafferjesi716@gmail.com.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">JC 
+          BIO</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
